@@ -1,0 +1,116 @@
+body, html{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Rubik-lite';
+    src: url(font/Rubik-Light.ttf);
+}
+@font-face {
+    font-family: 'Rubik Fat';
+    src: url(font/Rubik-Black.ttf);
+}
+
+/* Paramètres globaux */
+
+p, li{
+    text-align: justify;
+    font-family: 'Rubik-lite';
+}
+h2, h1, h3{
+    margin-top: 0;
+    font-family: 'Rubik Fat';
+}
+h2{
+    font-size: large;
+}
+
+
+/* Mise en page du header */
+
+header{
+    /* Taille et position */
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Background */
+    background-color: white;
+    border-radius: 15px;
+}
+.photoheader{
+    width: 20%;
+    height: auto;
+}
+.photoheader img{
+    max-width: 100%;
+}
+.infoheader{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+}
+.infoheader h1{
+    font-size: x-large;
+    margin-bottom: 0;
+    text-align: center;
+}
+.infoheader p{
+    margin-top: 0;
+    font-size: small;
+    text-align: center;
+}
+/* Section: paramètres globaux */
+
+.zone{
+    /* Comportement */
+    margin: 2%;
+    padding: 2%;
+    /* background */
+    background-color: cadetblue;
+
+}
+
+/* Section: horaires */
+
+#horaires{
+    /* Position */
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+#j_h{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    justify-content: flex-start;
+    padding-right: 5%;
+}
+#adresse{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height:auto;
+}
+#adresse iframe{
+    max-width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    padding: 5%;
+    transition: 220ms;
+}
+#adresse iframe:hover{
+    transform: scale(1.2);
+    transition: 330ms;
+}
+#adresse h3, p{
+    margin: 0;
+}
