@@ -1,291 +1,111 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_base.css">
-    <link rel="stylesheet" media="only screen and (min-width:1024px)" href="style_desktop.css">
-    <title>Mon CV - Kilian DUCLOS</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Union Skateboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
-
 <body>
-    
+
     <header>
+        <!-- Les div photoheader sont créé pour simplifier la mise en page en CSS -->
+        <div class="photoheader">
+            <img src="img/Logo_usb.png" alt="Logo USB">
+        </div>
 
-        <div class="photo_info">
-
-            <div id="photo">
-
-                <img src="img/portrait.jpg" alt="Ma photo">
-
-            </div>
-
-            <div id="info">
-
-                <div id="name">
-
-                    <h1>Kilian DUCLOS</h1>
-
-                </div>
-
-                <div id="contact">
-
-                    <a href="mailto:kilian.duclos@laposte.net"><img src="img/mail_ico.svg" alt="kilian.duclos@laposte.net"></a>
-
-                </div>
-
-            </div>
-
+        <div class="infoheader">
+            <h1>UNION SKATEBOARD</h1>
+            <p>Association dans le but de rassembler les skateurs de l'agglomération Dijonnaise</p>
         </div>
 
     </header>
 
-    <!-- Barre de navigation -->
-    <!-- Je laisse le code au cas où -->
-
-    <!-- <nav class="header_nav">
-
-            <a href="#exp">Expériences</a>
-            <a href="#dipl">Formations</a>
-            <a href="#skills">Compétences</a>
-            <a href="#about">A Propos</a>
-        
-    </nav> -->
-
-    <div class="cvbuild">
-
-        <div class="zone">
-
-            <h1>Mes expérience professionnelle</h1>
-
-            <ul>
-                <li>
-                    <ul>
-                        <li>
-                            <div class="orga_liste">
-
-                                <div class="img_liste">
-
-                                    <img src="img/logo_ca.png" alt="logo CACBI">
-
-                                </div>
-                                
-                                <div class="texte_liste">
-
-                                    <h3>Assistant comptable et reponsable informatique</h3>
-                                    <h4>Depuis 2021 | CACB Immobilier (21)</h4>
-                                    <p>Saisie de facture et rapprochement comptable, gestion et maintenance du park informatique.</p>
-
-                                </div>
-                        </div>
-                        </li>
-                        <li>
-                            <div class="orga_liste">
-
-                                <div class="img_liste">
-
-                                    <img src="img/logo_ca.png" alt="logo CACBI">
-
-                                </div>
-                                
-                                <div class="texte_liste">
-
-                                    <h3>Comptable Gestion Locative</h3>
-                                    <h4>2020 - 2021 | CACB Immobilier (21)</h4>
-                                    <p>Saisie de facture, affectation des encaissements, rapprochement bancaire.</p>
-
-                                </div>
-                            </div>
-
-                        </li>
-                        <li>
-                            <div class="orga_liste">
-
-                                <div class="img_liste">
-
-                                    <img src="img/transdev_logo.png" alt="Transdev BFCEST">
-
-                                </div>
-                                
-                                <div class="texte_liste">
-
-
-
-                                <h3>Assistant Admnistratif</h3>
-                                <h4>2019 | TRANSDEV BFC EST (21)</h4>
-                                <p>Mise en place et création d'un outil de suivi de caisse, suivi du park auto</p>
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+    <div class="zone">
+        <div id="about">
+            <H2>L'association</H2>
+            <p>Union Skateboard est une association à but non lucratif, loi 1901, qui a pour but de rassembler
+                les skateurs de la région dijonnaise et de permettre à différentes personnes de tout âges et de tous niveaux
+                de se rencontrer autour d'une planche à roulette
+            </p>
+            <p>Fondée en 2002 par une assemblée de skateurs locaux, l'association à pour but de regrouper et de 
+                promouvoir le skate dijonnais. Notre association regroupe un panel de personnes de tout âges et de tous niveaux.
+                Nos plus vieux pratiquants font du skate depuis 1988
+            </p>
+            <p>Nous serons heureux de vous accueillir et de vous faire partager notre expérience!</p>
         </div>
-        
-        <div id="dipl" class="zone">
-
-            <h1>Mes formations et certifications</h1>
-
-            <h2>Formations:</h2>
-
-            <ul>
-                <li>
-                    <ul>
-                        <li>
-                            <div class="orga_liste">
-
-                                <div class="img_liste">
-
-                                    <img src="img/lycee_jgf.jpg" alt="Lycée Jean Guéhenno">
-
-                                </div>
-                                
-                                <div class="texte_liste">
-
-                                    <h3>BTS Comptabilité et Gestion</h3>
-                                    <h4>2017 - 2019 | Lycée Jean Guéhenno (35)</h4>
-                                    <p>Enseignement fondamentaux en comptabilité générale, sociale et analytique. Initiation à la création d'algorithme VBA et à l'utilisation de base SQL.</p>
-
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="orga_liste">
-
-                                <div class="img_liste">
-
-                                    <img src="img/lycee_jgf.jpg" alt="Lycée Jean Guéhenno">
-
-                                </div>
-                                
-                                <div class="texte_liste">
-
-                                    <h3>BACCALAUREAT Economique et Social</h3>
-                                    <h4>2014 - 2017</h4>
-                                    <p>Option: Science Sociale et Politique</p>
-
-                                </div>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h2>Certifications:</h2>
-
-            <ul>
-                <li>
-                    <ul>
-                        <li>
-                            <div class="orga_liste">
-
-                                <div class="img_liste">
-
-                                    <img src="img/google_analytics_logo.png" alt="Google Analytics">
-
-                                </div>
-                                
-                                <div class="texte_liste">
-
-                                    <h3>Google Analytics pour les débutants</h3>
-                                    <h4>2021 | Google Analytics Academy</h4>
-                                    <p>Initiation à l'utilisation de Google Analytics</p>
-
-                                </div>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <div class="orga_liste">
-
-                                <div class="img_liste">
-
-                                    <img src="img/google_atelier_num_logo.jpg" alt="Google Atelier Numérique">
-
-                                </div>
-                                
-                                <div class="texte_liste">
-
-                                    <h3>Fondamentaux du marketing numérique</h3>
-                                    <h4>2021 | The Open University - Google Atelier Numérique</h4>
-                                    <p>Initiation aux principes de bases en marketing numérique: Référencement SEO, SEA, ciblage d'audience, utilisation des réseaux sociaux...</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
         </div>
 
-        <div id="skills" class="zone">
+<!-- Création du premier bloc d'information: Les horaires et l'adresse des sessions-->
+    <div class="zone">
+    <div id="horaires">
+        <div id="j_h">
 
-            <h1>Mes compétences</h1>
-
-            <h2>3 Soft Skills</h2>
-
+            <h2>Horaires:</h2>
+            <p>Nous profitons de créneaux associatifs au skatepark couvert de Dijon. Voici les horaires en périodes scolaires:</p>
             <ul>
-                <li>Grande aisance à l'informatique</li>
-                <li>Capacité d'adaptation proche du tardigrade</li>
-                <li>Créativitude</li>
+                <li><em>Mardi</em> : 18h-21h</li>
+                <li><em>Vendredi</em> : 19h-21h</li>
+            </ul>
+           
+
+        </div>
+        <div id="adresse">
+            <h2>Adresse:</h2>
+            <p><strong>Skatepark de Dijon</strong></p>
+            <p>2 Rue Général DELABORDE</p>
+            <p>21000 DIJON</p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10816.431427861646!2d5.051096459771727!3d47.33176485910986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x745f1aee8c4a35c6!2sSkatepark%20de%20Dijon!5e0!3m2!1sfr!2sfr!4v1645001986373!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="zone">
+        <div id="horvac">
+            <h2>Horaires pour les vacances d'hiver</h2>
+            <p>Du 14/02/2022 au 27/02/2022</p>
+            <ul>
+                <li><em>Mardi 15/02/2021</em> : 18h-21h</li>
+                <li><em>Mercredi 16/02/2021</em> : 18h-21h</li>
+                <li><em>Vendredi 18/02/2021</em> : 18h-21h</li>
             </ul>
 
-            <h2>3 Hard Skills</h2>
+            <p>Pas d'horaires pour la deuxième semaines des vacances.</p>
+        </div>
+    </div>
 
-            <ul>
-                <li>Logique Comptable</li>
-                <li>Veille informationelle</li>
-                <li>Analyse de données</li>
-            </ul>
-
-        
-
-            <h2>Language</h2>
-
-            <div id="prog_lang">
-                <img src="img/html5_logo.png" alt="HTML5">
-                <img src="img/css3_logo.png" alt="CSS3">
-            </div>
-                
+    <div class="zone">
+        <div id="inscription">
+            <h2>Inscription</h2>
+            <p>Vous souhaitez devenir adhérent et profiter de nos créneaux associatifs?</p>
+            <p>Télécharger votre fiche d'inscription ci-dessous et nous la rapporter compléter au skatepark intérieur!</p>
+            <!-- <iframe src="content/fiche d'inscription 2021-2022.pdf" frameborder="0"></iframe> -->
+            <br>
+            <a href="content/fiche d'inscription 2021-2022.pdf">Fiche d'inscription 2021-2022</a>
+        </div>
+    </div>
+    
+    <div class="zone">
+        <div id="Partenaires">
+            <h2>Nos partenaires</h2>
+            <p>Shifty Boardshop</p>
+            <a href="https://shiftyboardshop.com"><img src="img/shifty.jpg" alt="Logo Shifty Boardshop"></a>
             
 
-            <h2>Logiciels</h2>
+        </div>
+    </div>
 
-            <ul>
-                <li>Virtual Studio Code</li>
-                <li>Inkscape</li>
-                <li>Gimp</li>
-                <li>Excel</li>
-                <li>Ableton</li>
-            </ul>
+    <div class="zone">
+        <div id="Contact">
+            <h2>Nous contacter:</h2>
+            <a href="mailto:unionskateboard.asso@gmail.com">unionskateboard.asso@gmail.com</a>
 
         </div>
-        
-        <div id="about" class="zone">
-
-            <h1>A propos de moi</h1>
-
-            <p>Nouveau Bourguigon d'origine Bretonne (attention à ne pas confondre crepe et galette!). </p>
-            <p>Après une première expérience dans le domaine de l'informatique et de la comptabilité, je souhaite ouvrir une nouvelle page dans ma vie professionnelle en me lancant dans le développement web.</p>
-            <p>Pour palier à mes connaissances encore naissantes sur le domaine, j'essaie de me démarquer avec mes capacités d'adaptation et d'apprentissage, mes connaissances de l'informatique en général et ma curiosité</p>
-            <p>J'éspère pouvoir aiguiser votre curiosité, et pouvoir rejoindre votre équipe.</p>
-
-            <h2>Passions</h2>
-
-            <ul>
-                <li>Skateboard</li>
-                <li>Zythologie</li>
-                <li>TTRPG</li>
-            </ul>
-
-
-        </div>
-
     </div>
 
 </body>
-
 </html>
