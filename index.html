@@ -1,111 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Union Skateboard</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Logo_usb.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>UNION SKATEBOARD - DIJON</title>
 </head>
 <body>
+    <header id="header">
+        <img src="img/Logo_usb.png" alt="" id="headerImage">
 
-    <header>
-        <!-- Les div photoheader sont créé pour simplifier la mise en page en CSS -->
-        <div class="photoheader">
-            <img src="img/Logo_usb.png" alt="Logo USB">
+        <div class="textAndNav">
+            <!-- <h1>UNION SKATEBOARD</h1> -->
+            <nav>
+                <a class="button buttonMenu" onclick="tabAccueil('accueil')">ACCUEIL</a>
+                <a class="button buttonMenu" onclick="tabAccueil('contact')">CONTACT</a>
+            </nav>
         </div>
-
-        <div class="infoheader">
-            <h1>UNION SKATEBOARD</h1>
-            <p>Association dans le but de rassembler les skateurs de l'agglomération Dijonnaise</p>
-        </div>
-
+        
     </header>
 
-    <div class="zone">
-        <div id="about">
-            <H2>L'association</H2>
-            <p>Union Skateboard est une association à but non lucratif, loi 1901, qui a pour but de rassembler
-                les skateurs de la région dijonnaise et de permettre à différentes personnes de tout âges et de tous niveaux
-                de se rencontrer autour d'une planche à roulette
+    <div id="accueil" class="webTab">
+
+        <div class="about textZone section">
+            <h2>Bienvenue sur Union Skateboard</h2>
+            <p>
+                Fondée en 2002 par une fine brochette de skateurs dijonnais, <strong>Union Skateboard</strong> est une association à but non lucratif, loi 1901. Le but de l'association 
+                est de <em>rassembler les skateurs de Dijon et ses environs</em>, et de permetter à tous de se réunir le temps d'une session de skate.
             </p>
-            <p>Fondée en 2002 par une assemblée de skateurs locaux, l'association à pour but de regrouper et de 
-                promouvoir le skate dijonnais. Notre association regroupe un panel de personnes de tout âges et de tous niveaux.
-                Nos plus vieux pratiquants font du skate depuis 1988
+            <p>
+                Nous regroupons un panel de skateurs de tout âges et de tout niveaux, tous lié par <em>la passion du skateboard</em>. A travers cette mentalité de partage et 
+                d'entraide, nous souhaitons promouvoir le skate à Dijon.
             </p>
-            <p>Nous serons heureux de vous accueillir et de vous faire partager notre expérience!</p>
+            <p>
+                Vous souhaitez nous rejoindre? N'hésitez pas! Nous serons heureux de vous accueillir et de partager avec vous l'amour du skate!
+            </p>
         </div>
+        
+        <div class="horaires section">
+
+            <div class="textZone">
+
+                <h2>Nos horaires</h2>
+
+                <p>
+                    Nous disposons, chaque semaine, de créneaux associatifs au skatepark couvert de Dijon!
+                </p>
+
+                <p class="shyText">Ces horaires sont valable hors des vacances scolaires uniquement.</p>
+
+                <div class="horairesListe">
+
+                    <ul class="listestyle">
+
+                        <li><p>Mardi: 18h-21h</p></li>
+
+                        <li><p>Vendredi: 19h-21h</p></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
         </div>
 
-<!-- Création du premier bloc d'information: Les horaires et l'adresse des sessions-->
-    <div class="zone">
-    <div id="horaires">
-        <div id="j_h">
-
-            <h2>Horaires:</h2>
-            <p>Nous profitons de créneaux associatifs au skatepark couvert de Dijon. Voici les horaires en périodes scolaires:</p>
-            <ul>
-                <li><em>Mardi</em> : 18h-21h</li>
-                <li><em>Vendredi</em> : 19h-21h</li>
-            </ul>
-           
-
+        <div class="inscription section">
+            <div class="textZone">
+                <h2>Devenir adhérent</h2>
+                <p>Vous souhaitez devenir adhérent et profiter de nos créneaux associatifs?</p>
+                <p>Téléchargez votre fiche d'inscription ci-dessous et transmettez-nous-la!</p>
+                <a class="button" href="content/fiche d'inscription 2021-2022.pdf">Fiche d'inscription 2021-2022</a>
+                <p class="shyText">L'adhésion vous donne accès à -10% sur le matériel de skate auprès de notre partenaire <strong>Shifty Boardshop</strong></p>
+            </div>
         </div>
-        <div id="adresse">
-            <h2>Adresse:</h2>
-            <p><strong>Skatepark de Dijon</strong></p>
-            <p>2 Rue Général DELABORDE</p>
-            <p>21000 DIJON</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10816.431427861646!2d5.051096459771727!3d47.33176485910986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x745f1aee8c4a35c6!2sSkatepark%20de%20Dijon!5e0!3m2!1sfr!2sfr!4v1645001986373!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-        </div>
     </div>
-    </div>
 
-    <div class="zone">
-        <div id="horvac">
-            <h2>Horaires pour les vacances d'hiver</h2>
-            <p>Du 14/02/2022 au 27/02/2022</p>
-            <ul>
-                <li><em>Mardi 15/02/2021</em> : 18h-21h</li>
-                <li><em>Mercredi 16/02/2021</em> : 18h-21h</li>
-                <li><em>Vendredi 18/02/2021</em> : 18h-21h</li>
-            </ul>
-
-            <p>Pas d'horaires pour la deuxième semaines des vacances.</p>
-        </div>
-    </div>
-
-    <div class="zone">
-        <div id="inscription">
-            <h2>Inscription</h2>
-            <p>Vous souhaitez devenir adhérent et profiter de nos créneaux associatifs?</p>
-            <p>Télécharger votre fiche d'inscription ci-dessous et nous la rapporter compléter au skatepark intérieur!</p>
-            <!-- <iframe src="content/fiche d'inscription 2021-2022.pdf" frameborder="0"></iframe> -->
-            <br>
-            <a href="content/fiche d'inscription 2021-2022.pdf">Fiche d'inscription 2021-2022</a>
-        </div>
+    <div id="contact" class="webTab" >
     </div>
     
-    <div class="zone">
-        <div id="Partenaires">
-            <h2>Nos partenaires</h2>
-            <p>Shifty Boardshop</p>
-            <a href="https://shiftyboardshop.com"><img src="img/shifty.jpg" alt="Logo Shifty Boardshop"></a>
-            
+<script src="script/tabSystem.js"></script>
+<script src="script/headerSchrink.js"></script>
 
-        </div>
-    </div>
 
-    <div class="zone">
-        <div id="Contact">
-            <h2>Nous contacter:</h2>
-            <a href="mailto:unionskateboard.asso@gmail.com">unionskateboard.asso@gmail.com</a>
-
-        </div>
-    </div>
-
+    
 </body>
 </html>
