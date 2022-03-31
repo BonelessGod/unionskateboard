@@ -65,9 +65,13 @@ img {
     width: 10rem;
 
     animation-duration: 5s;
+    -webkit-animation-duration: 5s;
     animation-name: rotation360;
+    -webkit-animation-name: rotation360;
     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
     animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
     transition: 1s;
     align-items: center;
     
@@ -81,6 +85,7 @@ img {
 .headerTextProg {
     position: fixed;
     animation-duration: 10ms;
+    -webkit-animation-duration: 10ms;
 }
 
 .headerTextBackground {
@@ -90,28 +95,34 @@ img {
 header #headerImageTexte{
     position: fixed;
     animation-name: rotationAnti360;
+    -webkit-animation-name: rotationAnti360;
     animation-duration: 120s;
+    -webkit-animation-duration: 120s;
     z-index: 5;
 
 }
 
 header #headerImageTexte2{
     animation-name: logoHalf1;
+    -webkit-animation-name: logoHalf1;
     z-index: 4;
 }
 
 header #headerImageTexte3{
     animation-name: logoHalf2;
+    -webkit-animation-name: logoHalf2;
     z-index: 2;
 }
 
 header #headerImageTexte4{
     animation-name: logoHalf3;
+    -webkit-animation-name: logoHalf3;
     z-index: 4;
 }
 
 header #headerImageTexte5{
     animation-name: logoHalf4;
+    -webkit-animation-name: logoHalf4;
     z-index: 2;
 }
 
@@ -187,7 +198,9 @@ header #headerImageTexte5{
 
 .button:active {
     animation-name: flip;
+    -webkit-animation-name: flip;
     animation-duration: 1s;
+    -webkit-animation-duration: 1s;
     transition: 100ms; 
 }
 
