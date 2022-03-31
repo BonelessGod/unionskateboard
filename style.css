@@ -58,6 +58,9 @@ img {
     scroll-behavior: auto;
     position: fixed;
     top: 0;
+
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 #header img{
@@ -86,6 +89,9 @@ img {
     position: fixed;
     animation-duration: 10ms;
     -webkit-animation-duration: 10ms;
+
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .headerTextBackground {
@@ -100,6 +106,8 @@ header #headerImageTexte{
     -webkit-animation-duration: 120s;
     z-index: 5;
 
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 header #headerImageTexte2{
