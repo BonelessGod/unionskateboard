@@ -1,0 +1,21 @@
+.usbTeam {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#titleAbout {
+    background-position: top;
+}
+
+#titleSession {
+    background-position: 100%;
+}
+
+#titleInscription{
+    background-position: left;
+}
+
+.textZone p{
+    text-align: center;
+    padding: 2rem 25%;
+}
