@@ -35,29 +35,44 @@
 
     <div id="accueil" class="webTab">
 
-        <div class="about textZone section">
-            <h2>Bienvenue sur Union Skateboard</h2>
-            <p>
-                Fondée en 2002 par une fine brochette de skateurs dijonnais, <strong>Union Skateboard</strong> est une association à but non lucratif, loi 1901. Le but de l'association 
-                est de <em>rassembler les skateurs de Dijon et ses environs</em>, et de permetter à tous de se réunir le temps d'une session de skate.
-            </p>
-            <p>
-                Nous regroupons un panel de skateurs de tout âges et de tout niveaux, tous lié par <em>la passion du skateboard</em>. A travers cette mentalité de partage et 
-                d'entraide, nous souhaitons promouvoir le skate à Dijon.
-            </p>
-            <p>
-                Vous souhaitez nous rejoindre? N'hésitez pas! Nous serons heureux de vous accueillir et de partager avec vous l'amour du skate!
-            </p>
+        <div class="about section">
 
-            <img src="img/dijon2.jpg" alt="">
+            <div class="titleZone" id="titleAbout">
+
+                <p>Bienvenue sur le site de l'association</p>
+    
+                <h2>Union Skateboard</h2>
+
+            </div>
+
+            <div class="textZone">
+                
+                <p>
+                    Fondée en 2002 par une fine brochette de skateurs dijonnais, <strong>Union Skateboard</strong> est une association à but non lucratif, loi 1901. Le but de l'association 
+                    est de <em>rassembler les skateurs de Dijon et ses environs</em>, et de permetter à tous de se réunir le temps d'une session de skate.
+                </p>
+                <p>
+                    Nous regroupons un panel de skateurs de tout âges et de tout niveaux, tous lié par <em>la passion du skateboard</em>. A travers cette mentalité de partage et 
+                    d'entraide, nous souhaitons promouvoir le skate à Dijon.
+                </p>
+                <p>
+                    Vous souhaitez nous rejoindre? N'hésitez pas! Nous serons heureux de vous accueillir et de partager avec vous l'amour du skate!
+                </p>
+
+            </div>
+
 
         </div>
         
         <div class="horaires section">
 
+            <div class="titleZone" id="titleSession">
+                <h2>Les Sessions</h2>
+            </div>
+
             <div class="textZone">
 
-                <h2>Les Sessions</h2>
+                
 
                 <p>
                     Nous disposons, chaque semaine, de créneaux associatifs au skatepark couvert de Dijon!
@@ -90,25 +105,91 @@
         </div>
 
         <div class="inscription section">
-            <div class="textZone">
+
+            <div class="titleZone" id="titleInscription">
                 <h2>Devenir adhérent</h2>
+            </div>
+
+            <div class="textZone">
                 <p>Vous souhaitez devenir adhérent et profiter de nos créneaux associatifs?</p>
                 <p>Téléchargez votre fiche d'inscription ci-dessous et transmettez-nous-la!</p>
                 <a class="button" href="content/fiche d'inscription 2021-2022.pdf">Fiche d'inscription 2021-2022</a>
-                <p class="shyText">L'adhésion vous donne accès à -10% sur le matériel de skate auprès de notre partenaire <strong>Shifty Boardshop</strong></p>
+                <p class="shyText">L'adhésion vous donne accès à -10% sur le matériel de skate auprès de notre partenaire  <label for="webLink"><strong> Shifty Boardshop</strong></label> </p>
+                <a href="http://www.shiftyboardshop.com"><img src="img/shifty.jpg" alt="Shifty Boardshop"></a>
             </div>
         </div>
-
+       
     </div>
 
-    <div id="contact" class="webTab" >
+    <div id="contact" class="webTab" style="display: none;">
 
-        <div class="textZone">
-            <p>Vous avez une question, une demande à faire ou des idées pour l'association? Dites le nous!</p>
-            <a href="mailto:unionskateboard.asso@gmail.com" class="button">Envoyez nous un mail</a>
+        <div class="section">
+
+            <div class="titleZone" id="titleAbout">
+                <h2>Nous contacter</h2>
+            </div>
+
+            <div class="textZone section">
+                <p>Vous avez une question, une demande à faire ou des idées pour l'association? Dites le nous!</p>
+                <a href="mailto:unionskateboard.asso@gmail.com" class="button">Envoyez nous un mail</a>
+            </div>
+            
+            <div class="titleZone" id="titleInscription">
+                <h2>Le bureau</h2>
+            </div>
+
+            <div class="usbTeam">
+                
+                <!-- <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img_avatar.png" alt="Avatar">
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Antoine BEZOU</h3>
+                        <p>Président</p>
+                      </div>
+                    </div>
+                </div>  -->
+    
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img/kilian.png" alt="Avatar">
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Kilian DUCLOS</h3>
+                        <p>Trésorier</p>
+                      </div>
+                    </div>
+                </div> 
+    
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="img/alix.png" alt="Avatar">
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Alix RELIER</h3>
+                        <p>Secrétaire</p>
+                      </div>
+                    </div>
+                </div> 
+    
+        </div>
+
+        
+
         </div>
 <!--  -->
     </div>
+
+    <footer>
+        <div class="footerInfo">
+            <p>Crédit photo: Pierre-Antoine MARTIN</p>
+            <p>Conception et développement site Web: Kilian DUCLOS</p>
+        </div>
+    </footer>
     
 <script src="script/tabSystem.js"></script>
 <script src="script/headerSchrink.js"></script>

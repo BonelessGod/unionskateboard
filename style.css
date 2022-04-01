@@ -59,6 +59,8 @@ img {
     position: fixed;
     top: 0;
 
+    z-index: 100;
+
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -148,7 +150,7 @@ header #headerImageTexte5{
 .headerBlock {
     display: block;
     width: 100%;
-    min-height: 15rem;
+    min-height: 12rem;
 
     margin-bottom: 1rem;
 
@@ -218,15 +220,29 @@ header #headerImageTexte5{
     
 }
 
+.titleZone {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    text-shadow: 0.25rem 0.25rem black;
+}
+
 .textZone {
     color: var(--color-text2);
     background-color: var(--color-second);
+}
 
-    border-radius: 1rem;
-
-    margin: 1rem;
+.textZone p, h2 {
     padding: 1rem;
-
 }
 
 .textZone p{
@@ -235,8 +251,31 @@ header #headerImageTexte5{
     text-align: justify;
 }
 
-.textZone h2{
-    font-size: larger;
+
+.titleZone h2{
+    font-size: xxx-large;
+    text-align: center;
+    text-transform: uppercase;
+    /* backdrop-filter: blur(20px); */
+    background-image: url(img/title_bg.png);
+    background-size: 100% 10rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#titleAbout {
+    background-image: url(img/alix_fsflip.jpg);
+    background-position: 60% 75%;
+}
+
+#titleSession {
+    background-image: url(img/kilian_boneless.jpg);
+    background-position: 60% 100%;
+}
+
+#titleInscription{
+    background-image: url(img/gwen_treflip.jpg);
+    background-position: 20% 100%;
 }
 
 .listestyle {
@@ -246,6 +285,9 @@ header #headerImageTexte5{
 
 }
 
+.adresseSkatepark {
+    padding-bottom: 2rem;
+}
 .adresseSkatepark p{
     text-align: center;
     padding: 0;
@@ -369,3 +411,88 @@ header #headerImageTexte5{
     }
     
 }
+
+
+.usbTeam {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    background-color: var(--color-second);
+}
+
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+    background-color: transparent;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 1rem;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-front img{
+      width: auto;
+      max-height: 100%;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  } 
+
+  a img{
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+  }
+
+  footer {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background-color: var(--color-main);
+    color: var(--color-text1);
+  }
+
+  footer p{
+      font-size: small;
+  }
