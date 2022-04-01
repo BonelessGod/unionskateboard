@@ -139,7 +139,7 @@ header #headerImageTexte5{
 #header.headerShrinked {
     height: 6rem;
     flex-direction: row;
-
+    overflow: hidden;
 }
 
 #header.headerShrinked img{
