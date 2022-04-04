@@ -203,6 +203,8 @@ header #headerImageTexte5{
     width: 15rem;
     align-self: center;
     text-align: center;
+    
+    cursor: pointer;
 }
 
 .buttonMenu {
