@@ -326,6 +326,16 @@ header #headerImageTexte5{
     background-position: 20% 100%;
 }
 
+#titleContact {
+    background-image: url(img/alix_fsflip.jpg);
+    background-position: 60% 75%;
+}
+
+#titleBureau {
+    background-image: url(img/kilian_boneless.jpg);
+    background-position: 60% 100%;
+}
+
 .listestyle {
     display: flex;
     flex-direction: column;
