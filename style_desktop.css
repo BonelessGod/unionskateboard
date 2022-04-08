@@ -15,6 +15,14 @@
     background-position: left;
 }
 
+#titleContact {
+    background-position: top;
+}
+
+#titleBureau {
+    background-position: left;
+}
+
 .textZone p{
     text-align: center;
     padding: 1rem 25%;

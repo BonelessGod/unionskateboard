@@ -74,6 +74,8 @@ img {
 
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+
+    box-shadow: 0 0 10rem var(--color-main);
 }
 
 #header img{
@@ -268,6 +270,9 @@ header #headerImageTexte5{
     background-color: var(--color-second);
     padding-top: 2rem;
     padding-bottom: 2rem;
+
+    box-shadow: 0 0 20rem var(--color-main);
+    z-index: 1;
 }
 
 .textZone img{
@@ -550,6 +555,8 @@ header #headerImageTexte5{
 
     background-color: var(--color-main);
     color: var(--color-text1);
+
+    z-index: 100;
   }
 
   footer p{
@@ -561,4 +568,8 @@ header #headerImageTexte5{
       color: white;
       margin: 1rem;
 
+  }
+
+  .scrollsnap {
+      scroll-snap-type: y mandatory;
   }
