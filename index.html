@@ -140,9 +140,17 @@
 
                 <p>Vous souhaitez devenir adhérent et profiter de nos créneaux associatifs?</p>
                 <p>Téléchargez votre fiche d'inscription ci-dessous et transmettez-nous-la!</p>
-                <a class="button" href="content/fiche-d'inscription-2021-2022.pdf">Fiche d'inscription 2021-2022</a>
+                <a class="button" onclick='showPopup(".fileShow")'>Fiche d'inscription 2021-2022</a>
                 <p class="shyText">L'adhésion vous donne accès à -10% sur le matériel de skate auprès de notre partenaire<strong> Shifty Boardshop</strong></p>
                 <a href="http://www.shiftyboardshop.com" id="webLink"><img src="img/shifty.jpg" alt="le logo de Shifty Boardshop"></a>
+            </div>
+
+            <div class="fileShow" style="display: none">
+                <object type="application/pdf" data="content/fiche-d'inscription-2021-2022.pdf" class="pdfViewer">
+                    <p>Il semblerait que votre navigateur ne peut pas afficher ce PDF. Vous pouvez toujours sur le bouton ci-dessous pour le télécharger!</p>
+                </object>
+                <a href="content/fiche-d'inscription-2021-2022.pdf" class="button" download="">Fiche d'inscription 2021-2022</a>
+                <button class="button" onclick='showPopup(".fileShow")'>Fermer</button>
             </div>
         </div>
        
@@ -222,6 +230,7 @@
 <script src="script/headerSchrink.js"></script>
 <script src="script/rndAnimation.js"></script>
 <script src="script/scrollToNull.js"></script>
+<script src="script/popupShow.js"></script>
 
 
     

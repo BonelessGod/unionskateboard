@@ -8,6 +8,7 @@
     --color-second: #e7ecef;
     --color-text1: #ffffff;
     --color-text2: #000000;
+    --color-popup: #8b8c89cc;
 }
 
 html, body {
@@ -201,12 +202,14 @@ header #headerImageTexte5{
     background-color: var(--color-button);
     transition: 314ms;
     perspective: 1000px;
+    color: var(--color-text1);
 
     width: 15rem;
     align-self: center;
     text-align: center;
     
     cursor: pointer;
+    border: none;
 }
 
 .buttonMenu {
@@ -572,4 +575,37 @@ header #headerImageTexte5{
 
   .scrollsnap {
       scroll-snap-type: y mandatory;
+  }
+
+  .fileShow {
+      position: fixed;
+      top: 0;
+
+      align-self: center;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      width: 90%;
+      height: 90%;
+      margin: 5rem 2rem 5rem 2rem;
+
+
+      z-index: 150;
+
+      background-color: var(--color-popup);
+
+      backdrop-filter: blur(20px);
+      border-radius: 5rem;
+
+      transition: 300ms;
+  }
+
+  .pdfViewer {
+      width: 90%;
+      height: 25rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
   }
