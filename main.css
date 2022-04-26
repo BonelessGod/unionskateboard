@@ -1,0 +1,596 @@
+/* COLOR */
+/* Background Image */
+/* TECHNICAL VALUES */
+/* -- Media Queries -- */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Montserrat:wght@900&display=swap");
+@-webkit-keyframes logo-rotationX {
+  0% {
+    -webkit-transform: rotateX(0deg) rotate(0deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotate(0deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+@keyframes logo-rotationX {
+  0% {
+    -webkit-transform: rotateX(0deg) rotate(0deg) rotateZ(0deg);
+            transform: rotateX(0deg) rotate(0deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@-webkit-keyframes logo-rotationY {
+  0% {
+    -webkit-transform: rotateY(0deg) rotate(0deg) rotateZ(0deg);
+            transform: rotateY(0deg) rotate(0deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@keyframes logo-rotationY {
+  0% {
+    -webkit-transform: rotateY(0deg) rotate(0deg) rotateZ(0deg);
+            transform: rotateY(0deg) rotate(0deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+  }
+}
+
+@-webkit-keyframes button-action {}
+
+@keyframes button-action {}* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 5rem 0 5rem;
+  background-color: #b31717;
+}
+
+li {
+  margin: 0;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: xxx-large;
+  }
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  padding: 1rem;
+  text-align: justify;
+  font-size: large;
+}
+
+a, p {
+  font-family: 'Kanit', sans-serif;
+}
+
+.button {
+  background-color: #dd1818;
+  border-radius: 1rem;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  margin: 1rem;
+  -webkit-transition: 330ms;
+  transition: 330ms;
+  color: #ffffff;
+  border-style: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background-color: #e96666;
+  -webkit-animation: button-action 330ms ease-in-out;
+          animation: button-action 330ms ease-in-out;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  margin: 1rem;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: url(../img/wood_bg_blue.jpg);
+  color: black;
+}
+
+.flip-card-front img {
+  width: auto;
+  max-height: 100%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-image: url(../img/grip_wallpaper.webp);
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  width: 100%;
+  height: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/grip_wallpaper.webp);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  scroll-behavior: auto;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0.5rem 0.5rem 10rem #000000;
+          box-shadow: 0.5rem 0.5rem 10rem #000000;
+  z-index: 100;
+}
+
+.header__logo {
+  height: 10rem;
+  width: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.header__logo-main {
+  position: fixed;
+  z-index: 5;
+}
+
+.header__logo-part {
+  position: fixed;
+  -webkit-animation-duration: 10ms;
+          animation-duration: 10ms;
+}
+
+.header__logo-part--main {
+  z-index: 10;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header__logo-part--background {
+  -webkit-filter: invert;
+          filter: invert;
+}
+
+.header__logo-part--animation-Y {
+  -webkit-animation: logo-rotationY linear 20s infinite;
+          animation: logo-rotationY linear 20s infinite;
+}
+
+.header__logo-part--animation-antiY {
+  animation: logo-rotationY linear 20s reverse infinite;
+}
+
+.header__logo-part--animation-X {
+  -webkit-animation: logo-rotationX linear 20s infinite;
+          animation: logo-rotationX linear 20s infinite;
+}
+
+.header__logo-part--animation-antiX {
+  animation: logo-rotationX linear 20s reverse infinite;
+}
+
+.header__logo img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.header__title {
+  color: #ffffff;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__blocker {
+  height: 20rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.header.--shrinked {
+  height: 8rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.header.--shrinked .header__logo, .header.--shrinked .header__logo img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.header.--shrinked .header__title h1 {
+  font-size: medium;
+}
+
+.header.--shrinked .header__nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header.--shrinked .button {
+  padding: .5rem 1rem .5rem 1rem;
+  font-size: medium;
+}
+
+.header__blocker.--shrinked {
+  height: 8rem;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/grip_wallpaper.webp);
+  color: #ffffff;
+  z-index: 100;
+}
+
+.footer__content p {
+  font-size: small;
+  padding: 0;
+  margin: 0;
+}
+
+.accueil, .contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.accueil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  display: none;
+}
+
+.about, .sessions, .subscribe, .mail, .social, .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.about__title, .sessions__title, .subscribe__title, .mail__title, .social__title, .team__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50rem;
+  color: #ffffff;
+  text-shadow: .1rem black;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.about__title h1, .about__title p, .sessions__title h1, .sessions__title p, .subscribe__title h1, .subscribe__title p, .mail__title h1, .mail__title p, .social__title h1, .social__title p, .team__title h1, .team__title p {
+  text-shadow: 0 0 .6rem black;
+}
+
+.about__content, .sessions__content, .subscribe__content, .mail__content, .social__content, .team__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background-image: url(../img/wood_bg.jpg);
+  background-size: cover;
+}
+
+.about__content-adress, .sessions__content-adress, .subscribe__content-adress, .mail__content-adress, .social__content-adress, .team__content-adress {
+  margin: 2rem;
+}
+
+.about__content-adress p, .sessions__content-adress p, .subscribe__content-adress p, .mail__content-adress p, .social__content-adress p, .team__content-adress p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1000px) {
+  .about__content, .sessions__content, .subscribe__content, .mail__content, .social__content, .team__content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .about__content p, .sessions__content p, .subscribe__content p, .mail__content p, .social__content p, .team__content p {
+    text-align: center;
+  }
+}
+
+.about__title {
+  background-image: url(../img/kilian_boneless_mobile.jpg);
+}
+
+@media (min-width: 1000px) {
+  .about__title {
+    background-image: url(../img/kilian_boneless.jpg);
+  }
+}
+
+.sessions__title {
+  background-image: url(../img/alix_fsflip_mobile.jpg);
+}
+
+@media (min-width: 1000px) {
+  .sessions__title {
+    background-image: url(../img/alix_fsflip.jpg);
+  }
+}
+
+.sessions ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.subscribe__title {
+  background-image: url(../img/gwen_treflip_mobile.jpg);
+}
+
+@media (min-width: 1000px) {
+  .subscribe__title {
+    background-image: url(../img/gwen_treflip.jpg);
+  }
+}
+
+.subscribe__popup {
+  position: fixed;
+  top: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 90%;
+  margin: 5rem 2rem 5rem 2rem;
+  z-index: 150;
+  background-image: url(../img/grip_wallpaper.webp);
+}
+
+.subscribe__popup-viewer {
+  width: 90%;
+  height: 25rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+.mail__title {
+  background-image: url(../img/alix_fsflip_mobile.jpg);
+}
+
+@media (min-width: 1000px) {
+  .mail__title {
+    background-image: url(../img/alix_fsflip.jpg);
+  }
+}
+
+.social__title {
+  background-image: url(../img/gwen_treflip_mobile.jpg);
+}
+
+@media (min-width: 1000px) {
+  .social__title {
+    background-image: url(../img/gwen_treflip.jpg);
+  }
+}
+
+.team__title {
+  background-image: url(../img/kilian_boneless_mobile.jpg);
+}
+
+@media (min-width: 1000px) {
+  .team__title {
+    background-image: url(../img/kilian_boneless.jpg);
+  }
+}
+
+.team__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-second);
+}
+
+@media (min-width: 1000px) {
+  .team__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.team p {
+  font-weight: bold;
+  font-size: x-large;
+}
+/*# sourceMappingURL=main.css.map */
