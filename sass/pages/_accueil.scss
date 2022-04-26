@@ -49,7 +49,10 @@
 .about {
 
     &__title{
-        background-image: url(../img/kilian_boneless.jpg);
+        @media (min-width: 1000px) {
+            background-image: url(../img/kilian_boneless.jpg);
+        }
+        background-image: url(../img/kilian_boneless_mobile.jpg);
     }
     
 }
@@ -57,7 +60,10 @@
 .sessions {
 
     &__title{
-        background-image: url(../img/alix_fsflip.jpg);
+        @media (min-width: 1000px) {
+            background-image: url(../img/alix_fsflip.jpg);
+        }
+        background-image: url(../img/alix_fsflip_mobile.jpg);
     
     }
 
@@ -72,7 +78,10 @@
 .subscribe {
 
     &__title{
-        background-image: url(../img/gwen_treflip.jpg);
+        @media (min-width: 1000px) {
+            background-image: url(../img/gwen_treflip.jpg);
+        }
+        background-image: url(../img/gwen_treflip_mobile.jpg);
     }
 
     &__popup{
@@ -101,18 +110,27 @@
 
 .mail{
     &__title{
-        background-image: url(../img/alix_fsflip.jpg);
+        @media (min-width: 1000px) {
+            background-image: url(../img/alix_fsflip.jpg);
+        }
+        background-image: url(../img/alix_fsflip_mobile.jpg);
     }
 }
 .social {
     &__title{
-        background-image: url(../img/gwen_treflip.jpg);
+        @media (min-width: 1000px) {
+            background-image: url(../img/gwen_treflip.jpg);
+        }
+        background-image: url(../img/gwen_treflip_mobile.jpg);
     }
 }
 
 .team {
     &__title{
-        background-image: url(../img/kilian_boneless.jpg);
+        @media (min-width: 1000px) {
+            background-image: url(../img/kilian_boneless.jpg);
+        }
+        background-image: url(../img/kilian_boneless_mobile.jpg);
     }    
     &__content {
         @media (min-width: 1000px) {
@@ -126,6 +144,10 @@
         align-items: center;
         background-color: var(--color-second);
       
+    }
+    p {
+        font-weight: bold;
+        font-size: x-large;
     }
 }
 
