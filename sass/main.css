@@ -530,32 +530,32 @@ a, p {
 }
 
 .mail__title {
-  background-image: url(../img/alix_fsflip_mobile.jpg);
+  background-image: url(../img/alix_fsflip_mobile.webp);
 }
 
 @media (min-width: 1000px) {
   .mail__title {
-    background-image: url(../img/alix_fsflip.jpg);
+    background-image: url(../img/alix_fsflip.webp);
   }
 }
 
 .social__title {
-  background-image: url(../img/gwen_treflip_mobile.jpg);
+  background-image: url(../img/gwen_treflip_mobile.webp);
 }
 
 @media (min-width: 1000px) {
   .social__title {
-    background-image: url(../img/gwen_treflip.jpg);
+    background-image: url(../img/gwen_treflip.webp);
   }
 }
 
 .team__title {
-  background-image: url(../img/kilian_boneless_mobile.jpg);
+  background-image: url(../img/kilian_boneless_mobile.webp);
 }
 
 @media (min-width: 1000px) {
   .team__title {
-    background-image: url(../img/kilian_boneless.jpg);
+    background-image: url(../img/kilian_boneless.webp);
   }
 }
 
