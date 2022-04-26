@@ -4,54 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="shortcut icon" href="img/Logo_usb.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="only screen and (min-width:1024px)" href="style_desktop.css">
-    <title>UNION SKATEBOARD - DIJON</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Union Skateboard</title>
+    <meta name="description" content="Site internet dédié à l'association Union Skateboard à Dijon">
 </head>
 <body>
-    <header id="header">
-        <img src="img/Logo_usb_img.png" alt="" id="headerImage">
-        <img src="img/Logo_usb_text_white.png" alt="" class="headerTextProg" id="headerImageTexte">
-        <img src="img/Logo_usb_text_blk_half1.png" alt="" class="headerTextProg headerTextBackground" id="headerImageTexte2">
-        <img src="img/Logo_usb_text_blk_half2.png" alt="" class="headerTextProg headerTextBackground" id="headerImageTexte3">
-        <img src="img/Logo_usb_text_blk_half1.png" alt="" class="headerTextProg headerTextBackground" id="headerImageTexte4">
-        <img src="img/Logo_usb_text_blk_half2.png" alt="" class="headerTextProg headerTextBackground" id="headerImageTexte5">
+    
+    <header class="header">
 
-        <div class="textAndNav">
-            <!-- <h1>UNION SKATEBOARD</h1> -->
-            <nav>      
-                
-                <a class="button buttonMenu" onclick="tabAccueil('accueil'); scrollToNull()">ACCUEIL</a>
-                                    
-                <a class="button buttonMenu" onclick="tabAccueil('contact'); scrollToNull()">CONTACT</a>
-                
-            </nav>
+        <div class="header__logo">
+            <img src="img/Logo_usb_img.png" alt="" class="header__logo-main">
+            <img src="img/Logo_usb_text_white.png" alt="" class="header__logo-part header__logo-part--main" id="headerImageTexte">
+            <img src="img/Logo_usb_text_blk_half1.png" alt="" class="header__logo-part header__logo-part--background header__logo-part--animation-Y" id="headerImageTexte2">
+            <img src="img/Logo_usb_text_blk_half2.png" alt="" class="header__logo-part header__logo-part--background header__logo-part--animation-antiY" id="headerImageTexte3">
+            <img src="img/Logo_usb_text_blk_half1.png" alt="" class="header__logo-part header__logo-part--background header__logo-part--animation-X" id="headerImageTexte4">
+            <img src="img/Logo_usb_text_blk_half2.png" alt="" class="header__logo-part header__logo-part--background header__logo-part--animation-antiX" id="headerImageTexte5">
         </div>
-        
+
+        <div class="header__title">
+            <h1>Union Skateboard</h1>
+        </div>
+
+        <div class="header__nav">
+
+            <a class="header__nav-tab button" onclick="tabAccueil('.accueil'); scrollToNull()">ACCUEIL</a>
+                                    
+            <a class="header__nav-tab button" onclick="tabAccueil('.contact'); scrollToNull()">CONTACT</a>
+
+        </div>
+
     </header>
 
-    <div class="headerBlock"></div>
+    <div class="header__blocker"></div>
 
-    <div id="accueil" class="webTab">
+    <div class="accueil tab">
 
-        <div class="about section scrollsnap">
+        <div class="about">
 
-            <div class="titleZone" id="titleAbout">
+            <div class="about__title">
 
-                <p>Bienvenue sur le site de l'association</p>
+                <p class="about__title-text">
+                    Bienvenue sur le site de l'association
+                </p>
     
-                <h2>Union Skateboard</h2>
-
-                <!-- <img src="img/arrow.png" alt=""> -->
+                <h1 class="about__title-h1">
+                    Union Skateboard
+                </h1> 
 
             </div>
 
-            <div class="textZone">
+            <div class="about__content">
 
-                <h2>A propos de l'association</h2>
-                
+                <h2 class="about__content-title">
+                    A propos de l'association?
+                </h2>
+
                 <p>
                     Fondée en 2002 par une fine brochette de skateurs dijonnais, <strong>Union Skateboard</strong> est une association à but non lucratif, loi 1901. Le but de l'association 
                     est de <em>rassembler les skateurs de Dijon et ses environs</em>, et de permettre à tous de se réunir le temps d'une session de skate.
@@ -68,55 +76,34 @@
 
 
         </div>
-        
-        <div class="horaires section scrollsnap">
 
-            <div class="titleZone" id="titleSession">
-                <h2>Les Sessions</h2>
+        <div class="sessions">
+
+            <div class="sessions__title">
+                <h1>Les sessions</h1>
             </div>
 
-            <div class="textZone">
-
+            <div class="sessions__content">
+                
                 <h2>Nos créneaux</h2>
 
                 <p>
                     Nous disposons, chaque semaine, de créneaux associatifs au skatepark couvert de Dijon!
                 </p>
 
-                <p>De septembre 2021 à juin 2022 hors vacances scolaire</p>
+                <p>
+                    De septembre 2021 à juin 2022 hors vacances scolaire
+                </p>
 
-                <div class="horairesListe">
+                <ul class="sessions__content-list">
 
-                    <ul class="listestyle">
+                    <li><p><strong>Mardi: 18h-21h</strong></p></li>
 
-                        <li><p><strong>Mardi: 18h-21h</strong></p></li>
+                    <li><p><strong>Vendredi: 19h-21h</strong></p></li>
 
-                        <li><p><strong>Vendredi: 19h-21h</strong></p></li>
+                </ul>
 
-                    </ul>
-
-                </div>
-
-                <div class="horairesVacances">
-
-                    <p><strong>Les créneaux pour les vacances de pâques:</strong></p>
-                    <p>Du 18 avril 2022 au 1er Mai 2022</p>
-
-                    <ul class="listestyle">
-
-                        <li><p><strong>Mardi 19 avril: 18h-21h</strong></p></li>
-                        <li><p><strong>Mercredi 20 avril: 18h-21h</strong></p></li>
-                        <li><p><strong>Vendredi 22 avril: 19h-21h</strong></p></li>
-
-                    </ul>
-
-                    <p>Pas de sessions la deuxième semaine des vacances</p>
-
-                </div>
-
-                <h2>Le local</h2>
-
-                <div id="adresseSkatepark">
+                <div class="sessions__content-adress">
                     <p><strong>Skatepark de Dijon</strong></p>
                     <p>2 rue Générale DELABORDE</p>
                     <p>21000 DIJON</p>
@@ -126,55 +113,57 @@
 
         </div>
 
-        <div class="inscription section scrollsnap">
-
-            <div class="titleZone" id="titleInscription">
-                <h2>Devenir adhérent</h2>
+        <div class="subscribe">
+            <div class="subscribe__title">
+                <h1>Devenir adhérent</h1>
             </div>
-
-
-
-            <div class="textZone">
-
-                <h2>Nous rejoindre</h2>
-
+            <div class="subscribe__content">
                 <p>Vous souhaitez devenir adhérent et profiter de nos créneaux associatifs?</p>
                 <p>Téléchargez votre fiche d'inscription ci-dessous et transmettez-nous-la!</p>
-                <a class="button" onclick='showPopup(".fileShow")'>Fiche d'inscription 2021-2022</a>
+                <a class="button" onclick='showPopup(".subscribe__popup")'>Fiche d'inscription 2021-2022</a>
                 <p class="shyText">L'adhésion vous donne accès à -10% sur le matériel de skate auprès de notre partenaire<strong> Shifty Boardshop</strong></p>
                 <a href="http://www.shiftyboardshop.com" id="webLink"><img src="img/shifty.jpg" alt="le logo de Shifty Boardshop"></a>
             </div>
-
-            <div class="fileShow" style="display: none">
-                <object type="application/pdf" data="content/fiche-d'inscription-2021-2022.pdf" class="pdfViewer">
+            <div class="subscribe__popup">
+                <object type="application/pdf" data="content/fiche-d'inscription-2021-2022.pdf" class="subscribe__popup-viewer">
                     <p>Il semblerait que votre navigateur ne peut pas afficher ce PDF. Vous pouvez toujours sur le bouton ci-dessous pour le télécharger!</p>
                 </object>
                 <a href="content/fiche-d'inscription-2021-2022.pdf" class="button" download="">Fiche d'inscription 2021-2022</a>
-                <button class="button" onclick='showPopup(".fileShow")'>Fermer</button>
+                <button class="button" onclick='showPopup(".subscribe__popup")'>Fermer</button>
             </div>
         </div>
-       
+
+
+
+
     </div>
 
-    <div id="contact" class="webTab" style="display: none;">
+    <div class="contact tab">
 
-        <div class="section scrollsnap">
-
-            <div class="titleZone" id="titleContact">
-                <h2>Nous contacter</h2>
+        <div class="mail">
+            <div class="mail__title">
+                <h1>Nous contacter</h1>
             </div>
-
-            <div class="textZone section scrollsnap">
+            <div class="mail__content">
                 <p>Vous avez une question, une demande à faire ou des idées pour l'association? Dites le nous!</p>
                 <a href="mailto:unionskateboard.asso@gmail.com" class="button">Envoyez nous un mail</a>
             </div>
-            
-            <div class="titleZone" id="titleBureau">
-                <h2>Le bureau</h2>
+        </div>
+<!-- 
+        <div class="social">
+            <div class="social__title">
+                <h1>Nous suivre</h1>
             </div>
+            <div class="social__content">
 
-            <div class="usbTeam">
-                
+            </div>
+        </div> -->
+
+        <div class="team">
+            <div class="team__title">
+                <h1>Le bureau</h1>
+            </div>
+            <div class="team__content">
                 <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
@@ -210,29 +199,23 @@
                       </div>
                     </div>
                 </div> 
-    
+            </div>
         </div>
-
-        
-
-        </div>
-<!--  -->
     </div>
 
-    <footer>
-        <div class="footerInfo">
+
+    <footer class="footer">
+        <div class="footer__content">
             <p>Crédit photo: Pierre-Antoine MARTIN</p>
             <p>Conception et développement site Web: Kilian DUCLOS</p>
         </div>
     </footer>
-    
-<script src="script/tabSystem.js"></script>
-<script src="script/headerSchrink.js"></script>
-<script src="script/rndAnimation.js"></script>
-<script src="script/scrollToNull.js"></script>
-<script src="script/popupShow.js"></script>
 
 
-    
+    <script src="script/headerSchrink.js"></script>
+    <script src="script/popupShow.js"></script>
+    <script src="script/tabSystem.js"></script>
+    <script src="script/scrollToNull.js"></script>
+
 </body>
 </html>

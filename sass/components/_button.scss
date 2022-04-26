@@ -1,0 +1,19 @@
+.button {
+
+    background-color: $color-button;
+    border-radius: 1rem;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    margin: 1rem;
+    transition: 330ms;
+    @include text-color($color-button);
+    border-style: none;
+
+    font-weight: bold;
+
+    &:hover{
+        transform-origin: left;
+        background-color: $color-button-selected;
+        animation: button-action 330ms ease-in-out;
+    }
+
+}
