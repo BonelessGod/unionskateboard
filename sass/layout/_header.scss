@@ -1,0 +1,105 @@
+.header {
+
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    background-image: $background-main;
+
+    transition: 500ms;
+    scroll-behavior: auto;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+
+    box-shadow: 0.5rem 0.5rem 10rem $color-text2;
+
+    z-index: 100;
+
+    &__logo {
+
+        height: 10rem;
+        width: 10rem;
+        display: flex;
+        margin: 1rem;
+        transition: 500ms;
+
+        &-main{
+            position: fixed;
+            z-index: 5;
+        }
+
+        &-part{
+            position: fixed;
+            animation-duration: 10ms;
+            &--main{
+                z-index: 10;
+                transform: scale(1.1);
+            }
+            &--background {
+                filter: invert;
+            }
+            &--animation-Y {
+                animation: logo-rotationY linear 20s infinite;
+            }
+            &--animation-antiY {
+                animation: logo-rotationY linear 20s reverse infinite;
+            }
+            &--animation-X {
+                animation: logo-rotationX linear 20s infinite;
+            }
+            &--animation-antiX {
+                animation: logo-rotationX linear 20s reverse infinite;
+            }
+
+        }
+
+        img{
+            height: 10rem;
+            width: 10rem;
+        }
+    }
+
+    &__title {
+        @include text-color($color-main);
+    }
+
+    &__nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+    &__blocker{
+        height: 20rem;
+        transition: 500ms;
+    }
+}
+
+.header.--shrinked{
+    height: 8rem;
+    flex-flow: row;
+    .header__logo, .header__logo img {
+        @include shrinked-size();
+    }
+    .header__title h1 {
+        font-size: medium;
+    }
+    .header__nav {
+        justify-content: flex-end;
+    }
+    .button{
+        padding: .5rem 1rem .5rem 1rem;
+        font-size: medium;
+    }
+}
+
+
+
+.header__blocker.--shrinked{
+    height: 8rem;
+}

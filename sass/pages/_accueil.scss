@@ -1,0 +1,131 @@
+.accueil, .contact{
+    flex-flow: column;
+}
+.accueil{
+    display: flex;
+}
+.contact {
+    display: none;
+}
+
+.about, .sessions, .subscribe, .mail, .social, .team {
+    display: flex;
+    flex-flow: column;
+    &__title{
+        @include section-title();
+        @include background-settings;
+        h1, p {
+            text-shadow: 0 0 .6rem black;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 1rem;
+        //background-color: $color-second;
+        background-image: $background-content;
+        background-size: cover;
+        &-adress{
+            margin: 2rem;
+            p{
+                margin: 0;
+                padding: 0;
+            }
+        }
+        @media (min-width: 1000px) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-bottom: 2rem;
+            padding-top: 2rem;
+            
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.about {
+
+    &__title{
+        background-image: url(../img/kilian_boneless.jpg);
+    }
+    
+}
+
+.sessions {
+
+    &__title{
+        background-image: url(../img/alix_fsflip.jpg);
+    
+    }
+
+    ul {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        @include text-color($color-main);
+    }
+}
+
+.subscribe {
+
+    &__title{
+        background-image: url(../img/gwen_treflip.jpg);
+    }
+
+    &__popup{
+        position: fixed;
+        top: 0;
+        align-self: center;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        height: 90%;
+        margin: 5rem 2rem 5rem 2rem;
+        z-index: 150;
+
+        background-image: $background-main;
+
+        &-viewer{
+            width: 90%;
+            height: 25rem;
+            margin: 1rem 0rem 1rem 0rem;
+        }
+    }
+}
+
+.mail{
+    &__title{
+        background-image: url(../img/alix_fsflip.jpg);
+    }
+}
+.social {
+    &__title{
+        background-image: url(../img/gwen_treflip.jpg);
+    }
+}
+
+.team {
+    &__title{
+        background-image: url(../img/kilian_boneless.jpg);
+    }    
+    &__content {
+        @media (min-width: 1000px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+        align-items: center;
+        background-color: var(--color-second);
+      
+    }
+}
+

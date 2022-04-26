@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: $background-main;
+    color: $color-text1;
+    z-index: 100;
+
+    &__content{
+        p{
+            font-size: small;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+
+}

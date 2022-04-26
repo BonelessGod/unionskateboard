@@ -1,0 +1,40 @@
+@mixin text-color($bg-color) {
+    @if ( lightness($bg-color) > 25%) {
+        $bg-color: $color-text1;
+    }@else{
+        $bg-color: $color-text2;
+    }
+    color: $bg-color;
+}
+
+@mixin background-settings(){
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+@mixin section-title(){
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    @include text-color($color-main);
+    text-shadow: .1rem black;
+}
+
+@mixin section-content(){
+    background-color: $color-background;
+}
+
+@mixin image-size(){
+    width: 10rem;
+    height: 10rem;
+}
+
+@mixin shrinked-size(){
+    width: 6rem;
+    height:6rem;
+}
