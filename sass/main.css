@@ -177,7 +177,7 @@ a, p {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-image: url(../img/wood_bg_blue.jpg);
+  background-image: url(../img/wood_bg_blue.webp);
   color: black;
 }
 
@@ -430,7 +430,7 @@ a, p {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
-  background-image: url(../img/wood_bg.jpg);
+  background-image: url(../img/wood_bg.webp);
   background-size: cover;
 }
 
@@ -456,22 +456,22 @@ a, p {
 }
 
 .about__title {
-  background-image: url(../img/kilian_boneless_mobile.jpg);
+  background-image: url(../img/kilian_boneless_mobile.webp);
 }
 
 @media (min-width: 1000px) {
   .about__title {
-    background-image: url(../img/kilian_boneless.jpg);
+    background-image: url(../img/kilian_boneless.webp);
   }
 }
 
 .sessions__title {
-  background-image: url(../img/alix_fsflip_mobile.jpg);
+  background-image: url(../img/alix_fsflip_mobile.webp);
 }
 
 @media (min-width: 1000px) {
   .sessions__title {
-    background-image: url(../img/alix_fsflip.jpg);
+    background-image: url(../img/alix_fsflip.webp);
   }
 }
 
@@ -490,12 +490,12 @@ a, p {
 }
 
 .subscribe__title {
-  background-image: url(../img/gwen_treflip_mobile.jpg);
+  background-image: url(../img/gwen_treflip_mobile.webp);
 }
 
 @media (min-width: 1000px) {
   .subscribe__title {
-    background-image: url(../img/gwen_treflip.jpg);
+    background-image: url(../img/gwen_treflip.webp);
   }
 }
 
