@@ -1,8 +1,8 @@
 function tabAccueil(tab) {
     var i;
-    var x = document.getElementsByClassName("webTab");
+    var x = document.getElementsByClassName("tab");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    document.getElementById(tab).style.display = "flex";
+    document.querySelector(tab).style.display = "flex";
   }
