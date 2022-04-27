@@ -123,6 +123,29 @@
         }
         background-image: url(../img/gwen_treflip_mobile.webp);
     }
+
+    &__content {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        transition: 220ms;
+        &-link{
+            display: flex;
+            flex-flow: column;
+            align-content: center;
+            img{
+                display: flex;
+                height: 5rem;
+                width: 5rem;
+                margin: auto;
+                &:hover {
+                    transform: scale(1.1) skew(1deg, 2deg);
+                }
+            }
+        }
+    }
+
+   
 }
 
 .team {

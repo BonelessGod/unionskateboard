@@ -104,6 +104,7 @@ p {
 
 a, p {
   font-family: 'Kanit', sans-serif;
+  text-decoration: none;
 }
 
 .button {
@@ -111,8 +112,8 @@ a, p {
   border-radius: 1rem;
   padding: .5rem 1.5rem .5rem 1.5rem;
   margin: 1rem;
-  -webkit-transition: 330ms;
-  transition: 330ms;
+  -webkit-transition: 220ms;
+  transition: 220ms;
   color: #ffffff;
   border-style: none;
   font-weight: bold;
@@ -132,7 +133,6 @@ a, p {
   background-color: transparent;
   width: 20rem;
   height: 20rem;
-  border: 1px solid #f1f1f1;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   /* Remove this if you don't want the 3D effect */
@@ -547,6 +547,46 @@ a, p {
   .social__title {
     background-image: url(../img/gwen_treflip.webp);
   }
+}
+
+.social__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: 220ms;
+  transition: 220ms;
+}
+
+.social__content-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.social__content-link img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  margin: auto;
+}
+
+.social__content-link img:hover {
+  -webkit-transform: scale(1.1) skew(1deg, 2deg);
+          transform: scale(1.1) skew(1deg, 2deg);
 }
 
 .team__title {
