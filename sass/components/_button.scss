@@ -7,6 +7,7 @@
     transition: 220ms;
     @include text-color($color-button);
     border-style: none;
+    box-shadow: 0 0 1rem darken($color-button, 20%);
 
     font-weight: bold;
 

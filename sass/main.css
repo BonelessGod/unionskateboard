@@ -116,6 +116,8 @@ a, p {
   transition: 220ms;
   color: #ffffff;
   border-style: none;
+  -webkit-box-shadow: 0 0 1rem #810e0e;
+          box-shadow: 0 0 1rem #810e0e;
   font-weight: bold;
   cursor: pointer;
 }
